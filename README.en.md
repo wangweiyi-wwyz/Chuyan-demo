@@ -6,9 +6,8 @@ Chuyan is a browser-based tool for preliminary investment analysis of energy sto
 
 ## Features
 
-### Sign-in and project dashboard
+### Project dashboard
 
-- The demo sign-in form accepts an account, password, and invitation code, with a button to fill in the sample credentials. **Remember this device** lets visitors return in the same browser without signing in again. The form demonstrates the sign-in flow.
 - The dashboard shows rated power, energy capacity, construction investment, and the debt share. Its setup checklist links to the input pages, and the return preview switches between project and equity IRR across the three scenarios.
 
 ### Project and timeline
@@ -51,7 +50,7 @@ The demo information page lists the features available online. Users enter assum
 
 ## Using the demo
 
-1. Open the live demo and start with the sample project.
+1. Open the live demo to go directly to the dashboard and use the sample project.
 2. Adjust the project inputs and scenario assumptions.
 3. Review the updated results on the dashboard, in the scenario comparison, and in the financial statements.
 
