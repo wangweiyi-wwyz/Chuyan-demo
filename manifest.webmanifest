@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "储研 · 储能投资测算",
+  "short_name": "储研",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#142638",
+  "theme_color": "#142638",
+  "icons": [
+    {"src": "assets/chuyan-lattice.svg", "sizes": "any", "type": "image/svg+xml"},
+    {"src": "assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}
+  ]
+}
