@@ -1,0 +1,2 @@
+const latticeLogo='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="储研 · 数据晶格">'+[[21,21],[43,21],[21,43],[43,43],[65,43],[43,65],[65,65]].map(([x,y])=>'<rect x="'+x+'" y="'+y+'" width="14" height="14" rx="2" fill="currentColor"/>').join('')+'</svg>';
+document.querySelectorAll('.brand .mark').forEach(mark=>{mark.innerHTML=latticeLogo;mark.setAttribute('title','储研 · 数据晶格')});

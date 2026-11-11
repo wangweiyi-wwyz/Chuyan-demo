@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="description" content="储研储能项目投资测算演示：三情景分析、财务报表、交互图表及中英文界面。"><meta name="viewport" content="width=device-width,initial-scale=1"><title>储研 · 储能投资测算</title><link rel="stylesheet" href="style.css"></head>
+<body><aside><div class="brand"><span class="mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="数据晶格"><rect x="21" y="21" width="14" height="14" rx="2" fill="#008f83"/><rect x="43" y="21" width="14" height="14" rx="2" fill="#008f83"/><rect x="21" y="43" width="14" height="14" rx="2" fill="#008f83"/><rect x="43" y="43" width="14" height="14" rx="2" fill="#008f83"/><rect x="65" y="43" width="14" height="14" rx="2" fill="#008f83"/><rect x="43" y="65" width="14" height="14" rx="2" fill="#008f83"/><rect x="65" y="65" width="14" height="14" rx="2" fill="#008f83"/></svg>
+</span> 储研 <small>ENERGY FINANCE</small></div><div class="workspace">个人工作空间 <span>⌄</span></div><div class="nav-label">投资测算</div><nav><button class="active">◫ <span>项目工作台</span></button><button>▤ <span>项目与时间轴</span></button><button>▥ <span>技术与运行</span></button><button>▧ <span>投资与运营成本</span></button><button>↗ <span>收益配置</span></button><button>▣ <span>融资与税务</span></button><button>≋ <span>三情景设置</span></button><div class="nav-label">分析与交付</div><button>◉ <span>测算结果</span></button><button>▦ <span>财务明细</span></button><button>▱ <span>报告与版本</span></button></nav><div class="side-bottom"><i></i> V1 · 本机工作区<br><small>年度假设模型 · 山西独立储能</small></div></aside>
+<main><header><div>工作空间 <span>/</span> <strong>项目工作台</strong></div><div class="header-right"><span class="demo">演示模式</span><span>帮助中心</span><b class="avatar">我</b></div></header><div class="content"><div class="page-title"><div><div class="eyebrow">PROJECT WORKSPACE</div><h1>让每一笔储能投资，有据可循。</h1><p>从运行假设到资本金回报，建立可追溯的投资决策。</p></div><button class="primary" id="newProject">＋ 新建项目</button></div>
+<div class="notice"><span>ⓘ</span> 当前为首页交互原型，所有金额、收益率及曲线均为演示数据，不代表项目测算结果。<b>第一步 · 页面框架</b></div>
+<div class="section-title"><h2>当前项目</h2><span>01 个项目 <span class="muted">/ 最近编辑</span></span></div>
+<section class="project"><div class="project-top"><div><div class="tags"><span>山西 · 独立储能</span><span class="outline">初筛阶段</span></div><h2 id="projectName">山西独立储能示范项目 <span class="sample">示例</span></h2><p>磷酸铁锂 <em>·</em> 建设期 6 个月 <em>·</em> 运营期 20 年</p></div><button class="secondary" id="projectDetail">查看项目 <span>↗</span></button></div><div class="project-stats"><div><label>额定功率 / 容量</label><strong>100 <small>MW</small> <span>/</span> 200 <small>MWh</small></strong></div><div><label>建设投资 <small>万元</small></label><strong>24,000<span class="small-tag">演示</span></strong></div><div><label>融资比例</label><strong>70.0<small>%</small></strong></div><div><label>数据配置进度</label><strong>2 <small>/ 6 项</small></strong><div class="progress"><i></i></div></div></div><div class="project-footer"><span><i class="dot"></i> 草稿 <span class="muted">· 尚未执行财务测算</span></span><span>方案 V0.1 <em>│</em> 个人项目</span></div></section>
+<div class="two-col"><section class="panel scenario"><div class="panel-head"><div><h2>三情景收益预览 <span class="sample">演示</span></h2><p>同一项目，比较不同经营假设下的回报</p></div><div class="segmented"><button class="selected" data-mode="equity">资本金</button><button data-mode="project">全投资</button></div></div><div class="scenario-cards"><div><label><i class="dot gray"></i> 悲观情景</label><strong id="low">6.82<small>%</small></strong><p>IRR · 演示值</p></div><div class="base"><label><i class="dot"></i> 基准情景</label><strong id="base">11.36<small>%</small></strong><p>IRR · 演示值</p></div><div><label><i class="dot blue"></i> 乐观情景</label><strong id="high">15.74<small>%</small></strong><p>IRR · 演示值</p></div></div><div class="chart-title"><b>累计净现金流</b><span>单位：万元</span></div><svg viewBox="0 0 650 185" role="img" aria-label="三情景累计现金流示意图"><g stroke="#edf0f3"><path d="M52 20H630M52 63H630M52 106H630M52 149H630"/></g><g fill="#8b96a5" font-size="10"><text x="5" y="24">20,000</text><text x="5" y="67">10,000</text><text x="30" y="110">0</text><text x="5" y="153">-10,000</text><text x="49" y="177">建设期</text><text x="190" y="177">第5年</text><text x="330" y="177">第10年</text><text x="470" y="177">第15年</text><text x="598" y="177">第20年</text></g><path d="M55 148L160 130L250 108L310 114L400 92L495 66L625 27" fill="none" stroke="#6295d2" stroke-width="2.5"/><path d="M55 148L160 136L250 121L310 129L400 109L495 89L625 58" fill="none" stroke="#11998b" stroke-width="3"/><path d="M55 148L160 142L250 133L310 144L400 130L495 116L625 94" fill="none" stroke="#a0aab6" stroke-width="2" stroke-dasharray="5 4"/></svg><div class="legend"><span><i class="dot gray"></i>悲观</span><span><i class="dot"></i>基准</span><span><i class="dot blue"></i>乐观</span><span class="muted">曲线仅用于展示布局</span></div></section>
+<section class="panel steps"><div class="panel-head"><div><h2>完成你的测算</h2><p>逐步完善参数，形成投资判断</p></div><span class="step-count">02 / 06</span></div><div class="step done"><b>✓</b><div><strong>项目信息</strong><p>区域、规模与评价周期</p></div><span>已配置</span></div><div class="step done"><b>✓</b><div><strong>技术与运行</strong><p>电池参数、循环与衰减</p></div><span>已配置</span></div><div class="step current"><b>3</b><div><strong>投资与成本</strong><p>建设投资及运营费用</p></div><span>待完善 →</span></div><div class="step"><b>4</b><div><strong>收益配置</strong><p>交易、辅助服务及其他收入</p></div></div><div class="step"><b>5</b><div><strong>融资与税务</strong><p>贷款、还款与税务假设</p></div></div><div class="step"><b>6</b><div><strong>情景与测算</strong><p>校验假设并生成结果</p></div></div><div class="steps-note">参数页面将在后续步骤逐项搭建</div></section></div>
+<section class="deliverables"><div><span class="file-icon">▦</span><div><h3>可复核的 Excel 模型</h3><p>完整财务报表 · 勾稽公式 · 三情景联动</p></div></div><span class="planned">后续步骤开发</span><div><span class="file-icon word">▤</span><div><h3>投决会测算报告</h3><p>Word 可编辑 · 三情景对比 · 风险与假设</p></div></div><span class="planned">后续步骤开发</span></section><footer>储研 · 储能项目投资测算 <span>假设透明 / 公式可追溯 / 结果可复核</span></footer></div></main>
+<dialog id="dialog"><form id="projectForm"><h2>新建项目</h2><p>创建首页展示项目；完整参数录入将在下一步搭建。</p><label>项目名称<input id="nameInput" required maxlength="40" placeholder="例如：大同100MW独立储能项目"></label><div class="dialog-actions"><button type="button" class="secondary" id="cancel">取消</button><button class="primary">创建项目</button></div></form></dialog><div id="toast" role="status"></div><script src="app.js"></script></body></html>
+<link rel="stylesheet" href="parameters.css"><script src="parameters.js"></script>
+<link rel="stylesheet" href="costs.css"><script src="costs.js"></script>
+<link rel="stylesheet" href="revenue.css"><script src="revenue.js"></script>
+<link rel="stylesheet" href="finance.css"><script src="finance-core.js"></script><script src="finance.js"></script>
+<link rel="stylesheet" href="scenarios.css"><script src="evaluation-core.js"></script><script src="scenarios.js"></script>
+<link rel="stylesheet" href="statements.css"><script src="statements-core.js"></script><script src="statements.js"></script>
+<link rel="stylesheet" href="exports.css"><script src="exports.js"></script>
+
+<script src="import-validation.js"></script><script src="imports.js"></script>
+<script src="dashboard.js"></script>
+<script src="versions.js"></script>
+<script src="version-diff.js"></script><script src="version-diff-ui.js"></script>
+<script src="backup.js"></script>
+<script src="backup-restore.js"></script>
+<script src="v1.js"></script>
+
+<link rel="stylesheet" href="redesign.css"><script src="redesign.js"></script>
+<link rel="stylesheet" href="decision-charts.css"><script src="decision-charts.js"></script>
+<script src="trend-charts.js?v=revenue-series3-1"></script>
+<link rel="stylesheet" href="chart-display.css?v=revenue-series3-1"><script src="chart-display.js?v=revenue-series3-1"></script>
+<script src="chart-typography.js"></script>
+<script src="bar-values.js?v=revenue-series3-1"></script>
+<script src="chart-units.js"></script>
+<script src="chart-year-ticks.js?v=revenue-series3-1"></script>
+
+<link rel="icon" type="image/svg+xml" href="assets/chuyan-lattice.svg"><script src="brand-lattice.js"></script>
+
+<link rel="stylesheet" href="terminal.css?v=6"><script src="terminal.js?v=2"></script>
+
+
+
+
+
+<link rel="stylesheet" href="day-theme.css"><script src="theme-toggle.js"></script>
+<script src="locale-dictionary.js?v=revenue-series3-1"></script><script src="localization.js"></script><script src="english-export-fields.js"></script><script src="demo-mode.js"></script><script src="language-toggle.js?v=3"></script>
+
